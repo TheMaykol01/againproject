@@ -270,16 +270,21 @@ h6 {
   background: var(--fondo-vidrio);
 }
 
-.menu-navegacion>.elemento-menu>a.activo::after {
-  content: '';
-  position: absolute;
-  bottom: 4px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 20px;
-  height: 3px;
-  border-radius: 2px;
-  background: var(--color-primario);
+.menu-navegacion .boton-cta-primario.activo,
+.menu-navegacion .boton-cta-blanco.activo {
+  background: var(--color-primario-oscuro) !important;
+  color: #ffffff !important;
+  box-shadow: var(--sombra-primaria);
+}
+
+.menu-navegacion .boton-cta-primario.activo::after,
+.menu-navegacion .boton-cta-blanco.activo::after {
+  display: none;
+}
+
+.menu-navegacion>.elemento-menu>a:focus-visible {
+  color: var(--color-primario);
+  background: var(--fondo-vidrio);
 }
 
 /* --- Flecha del submenú --- */
