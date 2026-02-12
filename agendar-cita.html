@@ -82,27 +82,27 @@
             <div class="campo-formulario">
               <label class="campo-etiqueta" for="campo-nombre">Nombre completo</label>
               <input type="text" class="campo-entrada" id="campo-nombre" name="nombre"
-                placeholder="Ej: María García López" required>
+                placeholder="Ej: María García López">
             </div>
 
             <!-- Teléfono -->
             <div class="campo-formulario">
               <label class="campo-etiqueta" for="campo-telefono">Teléfono</label>
               <input type="tel" class="campo-entrada" id="campo-telefono" name="telefono"
-                placeholder="Ej: (555) 123-4567" required>
+                placeholder="Ej: (555) 123-4567">
             </div>
 
             <!-- Correo electrónico -->
             <div class="campo-formulario">
               <label class="campo-etiqueta" for="campo-correo">Correo electrónico</label>
               <input type="email" class="campo-entrada" id="campo-correo" name="correo"
-                placeholder="Ej: correo@ejemplo.com" required>
+                placeholder="Ej: correo@ejemplo.com">
             </div>
 
             <!-- Especialidad -->
             <div class="campo-formulario">
               <label class="campo-etiqueta" for="campo-especialidad">Especialidad</label>
-              <select class="campo-seleccion" id="campo-especialidad" name="especialidad" required>
+              <select class="campo-seleccion" id="campo-especialidad" name="especialidad">
                 <option value="" disabled selected>Selecciona una especialidad</option>
                 <option value="cardiologia">🫀 Cardiología</option>
                 <option value="dermatologia">🧴 Dermatología</option>
@@ -119,13 +119,13 @@
             <!-- Fecha preferida -->
             <div class="campo-formulario">
               <label class="campo-etiqueta" for="campo-fecha">Fecha preferida</label>
-              <input type="date" class="campo-entrada" id="campo-fecha" name="fecha" required>
+              <input type="date" class="campo-entrada" id="campo-fecha" name="fecha">
             </div>
 
             <!-- Horario preferido -->
             <div class="campo-formulario">
               <label class="campo-etiqueta" for="campo-horario">Horario preferido</label>
-              <select class="campo-seleccion" id="campo-horario" name="horario" required>
+              <select class="campo-seleccion" id="campo-horario" name="horario">
                 <option value="" disabled selected>Selecciona un horario</option>
                 <option value="manana-temprano">🌅 7:00 — 9:00</option>
                 <option value="manana">☀️ 9:00 — 12:00</option>
@@ -143,6 +143,7 @@
             </div>
           </div>
 
+          <p id="warning" class="warning"></p>
           <!-- Botón enviar -->
           <button type="submit" class="boton-cta boton-cta-acento boton-enviar">
             ✅ Solicitar Cita

@@ -83,27 +83,27 @@
             <div class="campo-formulario">
               <label class="campo-etiqueta" for="campo-nombre-cv">Nombre completo</label>
               <input type="text" class="campo-entrada" id="campo-nombre-cv" name="nombre"
-                placeholder="Ej: Dr. Juan Pérez Méndez" required>
+                placeholder="Ej: Dr. Juan Pérez Méndez">
             </div>
 
             <!-- Correo electrónico -->
             <div class="campo-formulario">
               <label class="campo-etiqueta" for="campo-correo-cv">Correo electrónico</label>
               <input type="email" class="campo-entrada" id="campo-correo-cv" name="correo"
-                placeholder="Ej: correo@ejemplo.com" required>
+                placeholder="Ej: correo@ejemplo.com">
             </div>
 
             <!-- Teléfono -->
             <div class="campo-formulario">
               <label class="campo-etiqueta" for="campo-telefono-cv">Teléfono de contacto</label>
               <input type="tel" class="campo-entrada" id="campo-telefono-cv" name="telefono"
-                placeholder="Ej: (555) 123-4567" required>
+                placeholder="Ej: (555) 123-4567">
             </div>
 
             <!-- Especialidad -->
             <div class="campo-formulario">
               <label class="campo-etiqueta" for="campo-especialidad-cv">Especialidad médica</label>
-              <select class="campo-seleccion" id="campo-especialidad-cv" name="especialidad" required>
+              <select class="campo-seleccion" id="campo-especialidad-cv" name="especialidad">
                 <option value="" disabled selected>Selecciona tu especialidad</option>
                 <option value="cardiologia">🫀 Cardiología</option>
                 <option value="dermatologia">🧴 Dermatología</option>
@@ -121,7 +121,7 @@
             <!-- Años de experiencia -->
             <div class="campo-formulario">
               <label class="campo-etiqueta" for="campo-experiencia-cv">Años de experiencia</label>
-              <select class="campo-seleccion" id="campo-experiencia-cv" name="experiencia" required>
+              <select class="campo-seleccion" id="campo-experiencia-cv" name="experiencia">
                 <option value="" disabled selected>Selecciona un rango</option>
                 <option value="0-2">👶 0 — 2 años</option>
                 <option value="3-5">📘 3 — 5 años</option>
@@ -134,7 +134,7 @@
             <!-- Disponibilidad -->
             <div class="campo-formulario">
               <label class="campo-etiqueta" for="campo-disponibilidad-cv">Disponibilidad</label>
-              <select class="campo-seleccion" id="campo-disponibilidad-cv" name="disponibilidad" required>
+              <select class="campo-seleccion" id="campo-disponibilidad-cv" name="disponibilidad">
                 <option value="" disabled selected>Selecciona tu disponibilidad</option>
                 <option value="tiempo-completo">🕐 Tiempo completo</option>
                 <option value="medio-tiempo">🕑 Medio tiempo</option>
@@ -147,8 +147,7 @@
             <!-- Archivo CV -->
             <div class="campo-formulario campo-completo">
               <label class="campo-etiqueta" for="campo-archivo-cv">Adjuntar CV (PDF o Word)</label>
-              <input type="file" class="campo-entrada" id="campo-archivo-cv" name="archivo_cv" accept=".pdf,.doc,.docx"
-                required>
+              <input type="file" class="campo-entrada" id="campo-archivo-cv" name="archivo_cv" accept=".pdf,.doc,.docx">
             </div>
 
             <!-- Mensaje / carta de presentación -->
@@ -159,6 +158,7 @@
             </div>
           </div>
 
+          <p id="warning" class="warning"></p>
           <!-- Botón enviar -->
           <button type="submit" class="boton-cta boton-cta-acento boton-enviar">
             📧 Enviar mi CV

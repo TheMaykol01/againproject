@@ -1895,3 +1895,13 @@ h6 {
   margin-right: 0.4rem;
   font-weight: 700;
 }
+
+/* --- Alertas de validación --- */
+.warning {
+  color: #dc2626;
+  font-size: 0.9rem;
+  margin-bottom: var(--espaciado-sm);
+  white-space: pre-line;
+  font-weight: 500;
+  text-align: center;
+}
