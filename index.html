@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ClinicaTodoSalud — Tu salud es nuestra prioridad. Atención médica integral con los mejores especialistas.">
+  <title>ClinicaTodoSalud — Inicio</title>
+  <!-- Fuentes de Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Hoja de estilos -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       BARRA DE NAVEGACIÓN
+       ========================================== -->
+  <nav class="barra-navegacion" id="navegacion-principal">
+    <div class="contenedor">
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <div class="logo-icono">🩺</div>
+        Clinica<span>TodoSalud</span>
+      </a>
+
+      <!-- Toggle para menú móvil (CSS puro) -->
+      <input type="checkbox" class="toggle-menu" id="toggle-menu">
+      <label for="toggle-menu" class="label-toggle-menu" aria-label="Abrir menú">
+        <span class="barra"></span>
+        <span class="barra"></span>
+        <span class="barra"></span>
+      </label>
+
+      <!-- Menú de navegación -->
+      <ul class="menu-navegacion" id="menu-principal">
+        <li class="elemento-menu">
+          <a href="index.html" class="activo">Inicio</a>
+        </li>
+        <li class="elemento-menu">
+          <a href="especialidades.html">Especialidades</a>
+        </li>
+        <li class="elemento-menu">
+          <a href="busca-tu-medico.html">Busca tu Médico</a>
+        </li>
+        <li class="elemento-menu">
+          <a href="agendar-cita.html" class="boton-cta boton-cta-primario">
+            📅 Agendar Cita
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       SECCIÓN HERO
+       ========================================== -->
+  <section class="seccion-hero" id="hero">
+    <!-- Fondo animado -->
+    <div class="hero-fondo"></div>
+    <div class="hero-patron"></div>
+
+    <div class="contenedor">
+      <div class="hero-contenido">
+        <!-- Etiqueta -->
+        <div class="etiqueta">Atención médica de excelencia</div>
+
+        <!-- Título principal -->
+        <h1 class="hero-titulo">
+          Tu salud merece <br>
+          <span class="texto-gradiente">la mejor atención</span>
+        </h1>
+
+        <p class="hero-subtitulo">
+          En ClinicaTodoSalud contamos con más de 50 especialistas comprometidos con tu bienestar integral. Nuestra clínica combina tecnología de punta con un trato humano y personalizado, para que tú y tu familia reciban la atención médica que realmente merecen. Desde consultas generales hasta tratamientos especializados, estamos aquí en cada paso de tu salud.
+        </p>
+
+        <!-- Botones de acción -->
+        <div class="hero-acciones">
+          <a href="agendar-cita.html" class="boton-cta boton-cta-primario">
+            📅 Agendar tu cita
+          </a>
+          <a href="especialidades.html" class="boton-cta boton-cta-secundario">
+            Ver especialidades →
+          </a>
+        </div>
+
+        <!-- Estadísticas -->
+        <div class="hero-estadisticas">
+          <div class="estadistica">
+            <div class="estadistica-numero">50+</div>
+            <div class="estadistica-texto">Especialistas</div>
+          </div>
+          <div class="estadistica">
+            <div class="estadistica-numero">15k+</div>
+            <div class="estadistica-texto">Pacientes atendidos</div>
+          </div>
+          <div class="estadistica">
+            <div class="estadistica-numero">12</div>
+            <div class="estadistica-texto">Años de experiencia</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECCIÓN SERVICIOS
+       ========================================== -->
+  <section class="seccion-servicios" id="servicios">
+    <div class="contenedor">
+      <!-- Encabezado de sección -->
+      <div class="texto-centrado">
+        <div class="etiqueta">Nuestros Servicios</div>
+        <h2 class="titulo-seccion">Cuidamos de ti en <span class="texto-gradiente">cada etapa</span> de tu vida</h2>
+        <p class="subtitulo-seccion">Ofrecemos una atención integral con los más altos estándares de calidad médica. Cada uno de nuestros servicios está diseñado para brindarte tranquilidad, diagnósticos certeros y tratamientos efectivos respaldados por profesionales de primer nivel.</p>
+      </div>
+
+      <!-- Grid de servicios -->
+      <div class="grid-servicios">
+        <!-- Servicio 1 -->
+        <div class="tarjeta-servicio">
+          <div class="servicio-icono">🫀</div>
+          <h3 class="servicio-titulo">Consulta General</h3>
+          <p class="servicio-descripcion">Evaluación médica completa para prevenir, detectar y tratar enfermedades comunes con un enfoque personalizado. Nuestros médicos generales te acompañan en controles de rutina, chequeos preventivos y derivaciones a especialistas cuando sea necesario.</p>
+        </div>
+
+        <!-- Servicio 2 -->
+        <div class="tarjeta-servicio">
+          <div class="servicio-icono">🔬</div>
+          <h3 class="servicio-titulo">Laboratorio Clínico</h3>
+          <p class="servicio-descripcion">Análisis clínicos con tecnología avanzada y resultados rápidos para un diagnóstico preciso. Contamos con equipos de última generación que procesan hemogramas, perfiles metabólicos, pruebas hormonales y más, con entrega de resultados en tiempo récord.</p>
+        </div>
+
+        <!-- Servicio 3 -->
+        <div class="tarjeta-servicio">
+          <div class="servicio-icono">🏥</div>
+          <h3 class="servicio-titulo">Urgencias 24/7</h3>
+          <p class="servicio-descripcion">Atención de emergencias médicas las 24 horas del día, los 7 días de la semana. Nuestro equipo de urgencias está preparado para responder con rapidez ante cualquier situación crítica, con sala de observación, equipo de reanimación y especialistas de guardia.</p>
+        </div>
+
+        <!-- Servicio 4 -->
+        <div class="tarjeta-servicio">
+          <div class="servicio-icono">💊</div>
+          <h3 class="servicio-titulo">Farmacia Interna</h3>
+          <p class="servicio-descripcion">Medicamentos disponibles al instante dentro de nuestras instalaciones para tu comodidad. Nuestra farmacia cuenta con un amplio inventario de medicamentos genéricos y de marca, atendida por farmacéuticos certificados que te orientan sobre dosificación y posibles interacciones.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECCIÓN ¿POR QUÉ ELEGIRNOS?
+       ========================================== -->
+  <section class="seccion-ventajas" id="ventajas">
+    <div class="contenedor">
+      <!-- Encabezado -->
+      <div class="texto-centrado">
+        <div class="etiqueta">¿Por qué elegirnos?</div>
+        <h2 class="titulo-seccion">La confianza de miles de <span class="texto-gradiente">familias</span></h2>
+        <p class="subtitulo-seccion">Nuestro compromiso con la excelencia médica nos distingue. Con años de trayectoria atendiendo a la comunidad, nos hemos convertido en un referente de salud gracias a la calidad de nuestros profesionales, la calidez del trato humano y la inversión constante en tecnología.</p>
+      </div>
+
+      <!-- Grid de ventajas -->
+      <div class="grid-ventajas">
+        <div class="tarjeta-ventaja">
+          <span class="ventaja-icono">👨‍⚕️</span>
+          <div class="ventaja-numero">50+</div>
+          <div class="ventaja-titulo">Médicos Especialistas</div>
+          <p class="ventaja-descripcion">Profesionales con certificación internacional y amplia experiencia en las áreas más demandadas de la medicina moderna.</p>
+        </div>
+
+        <div class="tarjeta-ventaja">
+          <span class="ventaja-icono">⭐</span>
+          <div class="ventaja-numero">98%</div>
+          <div class="ventaja-titulo">Satisfacción del Paciente</div>
+          <p class="ventaja-descripcion">La gran mayoría de nuestros pacientes nos recomiendan a familiares y amigos, respaldando la calidad de nuestra atención.</p>
+        </div>
+
+        <div class="tarjeta-ventaja">
+          <span class="ventaja-icono">🏆</span>
+          <div class="ventaja-numero">12</div>
+          <div class="ventaja-titulo">Años de Trayectoria</div>
+          <p class="ventaja-descripcion">Más de una década cuidando la salud de la comunidad, con un historial sólido de resultados positivos y compromiso.</p>
+        </div>
+
+        <div class="tarjeta-ventaja">
+          <span class="ventaja-icono">🕐</span>
+          <div class="ventaja-numero">24/7</div>
+          <div class="ventaja-titulo">Atención Continua</div>
+          <p class="ventaja-descripcion">Siempre disponibles cuando más nos necesitas, con guardias médicas, laboratorio y farmacia las 24 horas del día.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECCIÓN TRABAJOS DESTACADOS
+       ========================================== -->
+  <section class="seccion-trabajos" id="trabajos-destacados">
+    <div class="contenedor">
+      <div class="texto-centrado">
+        <div class="etiqueta">Casos de Éxito</div>
+        <h2 class="titulo-seccion">Trabajos <span class="texto-gradiente">destacados</span></h2>
+        <p class="subtitulo-seccion">Conoce algunos de los logros más significativos de nuestro equipo médico. Cada caso representa el compromiso y la dedicación de nuestros profesionales por ofrecer los mejores resultados a nuestros pacientes.</p>
+      </div>
+
+      <div class="grid-trabajos">
+        <!-- Trabajo destacado 1 -->
+        <div class="tarjeta-trabajo">
+          <div class="trabajo-icono">🫀</div>
+          <h3 class="trabajo-titulo">Programa de Cirugía Cardiovascular</h3>
+          <p class="trabajo-descripcion">Implementamos un programa integral de cirugía cardiovascular que ha permitido realizar más de 200 intervenciones exitosas en el último año. Nuestro equipo de cardiocirujanos utiliza técnicas mínimamente invasivas que reducen el tiempo de recuperación y mejoran la calidad de vida de los pacientes.</p>
+          <div class="trabajo-estadistica">🏅 +200 cirugías exitosas</div>
+          <div class="trabajo-autor">
+            <div class="trabajo-avatar">👨‍⚕️</div>
+            <div>
+              <div class="trabajo-autor-nombre">Dr. Carlos Ramírez</div>
+              <div class="trabajo-autor-cargo">Jefe de Cardiocirugía</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trabajo destacado 2 -->
+        <div class="tarjeta-trabajo">
+          <div class="trabajo-icono">💉</div>
+          <h3 class="trabajo-titulo">Campaña de Vacunación Comunitaria</h3>
+          <p class="trabajo-descripcion">Lideramos una campaña de vacunación masiva que alcanzó a más de 5,000 personas en zonas vulnerables de la ciudad. El programa incluyó jornadas gratuitas de inmunización, charlas educativas sobre prevención y seguimiento personalizado para cada participante.</p>
+          <div class="trabajo-estadistica">🌍 5,000+ personas vacunadas</div>
+          <div class="trabajo-autor">
+            <div class="trabajo-avatar">👩‍⚕️</div>
+            <div>
+              <div class="trabajo-autor-nombre">Dra. María González</div>
+              <div class="trabajo-autor-cargo">Directora de Salud Pública</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trabajo destacado 3 -->
+        <div class="tarjeta-trabajo">
+          <div class="trabajo-icono">🔬</div>
+          <h3 class="trabajo-titulo">Investigación en Diagnóstico Temprano</h3>
+          <p class="trabajo-descripcion">Nuestro laboratorio de investigación clínica desarrolló un protocolo innovador para la detección temprana de enfermedades metabólicas. Este avance ha permitido diagnosticar condiciones prediabéticas y cardiovasculares con un 40% más de precisión que los métodos convencionales.</p>
+          <div class="trabajo-estadistica">📊 40% más precisión diagnóstica</div>
+          <div class="trabajo-autor">
+            <div class="trabajo-avatar">🧑‍🔬</div>
+            <div>
+              <div class="trabajo-autor-nombre">Dr. Fernando Méndez</div>
+              <div class="trabajo-autor-cargo">Director de Investigación Clínica</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECCIÓN CTA (llamada a la acción)
+       ========================================== -->
+  <section class="seccion-cta" id="cta-inicio">
+    <div class="contenedor">
+      <div class="cta-contenido">
+        <h2 class="cta-titulo">¿Necesitas atención médica?</h2>
+        <p class="cta-texto">Agenda tu cita hoy mismo y recibe la atención que mereces con nuestro equipo de especialistas.</p>
+        <div class="cta-botones">
+          <a href="agendar-cita.html" class="boton-cta boton-cta-blanco">📅 Agendar Cita</a>
+          <a href="busca-tu-medico.html" class="boton-cta boton-cta-contorno">Buscar Médico →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PIE DE PÁGINA
+       ========================================== -->
+  <footer class="pie-pagina" id="pie-pagina">
+    <div class="contenedor">
+      <div class="pie-grid">
+        <!-- Columna marca -->
+        <div class="pie-marca">
+          <a href="index.html" class="logo">
+            <div class="logo-icono">🩺</div>
+            Clinica<span>TodoSalud</span>
+          </a>
+          <p class="pie-descripcion">Tu salud es nuestra pasión. Brindamos atención médica integral con calidad, calidez y tecnología de vanguardia.</p>
+        </div>
+
+        <!-- Columna enlaces rápidos -->
+        <div class="pie-columna">
+          <h4 class="pie-columna-titulo">Enlaces</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="especialidades.html">Especialidades</a></li>
+            <li><a href="busca-tu-medico.html">Busca tu Médico</a></li>
+            <li><a href="agendar-cita.html">Agendar Cita</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna especialidades -->
+        <div class="pie-columna">
+          <h4 class="pie-columna-titulo">Especialidades</h4>
+          <ul>
+            <li><a href="especialidades.html">Cardiología</a></li>
+            <li><a href="especialidades.html">Pediatría</a></li>
+            <li><a href="especialidades.html">Dermatología</a></li>
+            <li><a href="especialidades.html">Traumatología</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna contacto -->
+        <div class="pie-columna">
+          <h4 class="pie-columna-titulo">Contacto</h4>
+          <ul>
+            <li><a href="#">📍 Av. Principal #123</a></li>
+            <li><a href="#">📞 (555) 123-4567</a></li>
+            <li><a href="#">✉️ contacto@clinicatodosalud.com</a></li>
+            <li><a href="#">🕐 Lun-Sáb: 7:00 - 20:00</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Parte inferior del pie de página -->
+      <div class="pie-inferior">
+        <p class="pie-copyright">© 2026 ClinicaTodoSalud. Todos los derechos reservados.</p>
+        <div class="pie-redes">
+          <a href="#" class="pie-red-social" aria-label="Facebook">📘</a>
+          <a href="#" class="pie-red-social" aria-label="Instagram">📷</a>
+          <a href="#" class="pie-red-social" aria-label="Twitter">🐦</a>
+          <a href="#" class="pie-red-social" aria-label="YouTube">🎬</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

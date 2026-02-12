@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Únete al equipo médico de ClinicaTodoSalud. Envía tu currículum y forma parte de nuestros especialistas.">
+  <title>Enviar CV — ClinicaTodoSalud</title>
+  <!-- Fuentes de Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Hoja de estilos -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       BARRA DE NAVEGACIÓN
+       ========================================== -->
+  <nav class="barra-navegacion" id="navegacion-principal">
+    <div class="contenedor">
+      <a href="index.html" class="logo">
+        <div class="logo-icono">🩺</div>
+        Clinica<span>TodoSalud</span>
+      </a>
+
+      <input type="checkbox" class="toggle-menu" id="toggle-menu">
+      <label for="toggle-menu" class="label-toggle-menu" aria-label="Abrir menú">
+        <span class="barra"></span>
+        <span class="barra"></span>
+        <span class="barra"></span>
+      </label>
+
+      <ul class="menu-navegacion" id="menu-principal">
+        <li class="elemento-menu">
+          <a href="index.html">Inicio</a>
+        </li>
+        <li class="elemento-menu">
+          <a href="especialidades.html">Especialidades</a>
+        </li>
+        <li class="elemento-menu">
+          <a href="busca-tu-medico.html">Busca tu Médico</a>
+        </li>
+        <li class="elemento-menu">
+          <a href="agendar-cita.html" class="boton-cta boton-cta-primario">
+            📅 Agendar Cita
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       CABECERA DE PÁGINA
+       ========================================== -->
+  <header class="cabecera-pagina" id="cabecera-enviar-cv">
+    <div class="contenedor">
+      <div class="etiqueta">Trabaja con Nosotros</div>
+      <h1 class="cabecera-titulo">Envía tu <span class="texto-gradiente">currículum</span></h1>
+      <p class="cabecera-descripcion">¿Eres profesional de la salud? Únete a nuestro equipo de especialistas y crece con nosotros.</p>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       SECCIÓN FORMULARIO DE CV
+       ========================================== -->
+  <section class="seccion-agendar" id="formulario-enviar-cv">
+    <div class="contenedor">
+      <div class="agendar-contenedor">
+
+        <!-- Formulario de CV -->
+        <form class="formulario-cita" id="formulario-cv" action="#" method="post" enctype="multipart/form-data">
+          <h2 class="formulario-titulo">📄 Datos del Postulante</h2>
+
+          <div class="grupo-campos">
+            <!-- Nombre completo -->
+            <div class="campo-formulario">
+              <label class="campo-etiqueta" for="campo-nombre-cv">Nombre completo</label>
+              <input type="text" class="campo-entrada" id="campo-nombre-cv" name="nombre" placeholder="Ej: Dr. Juan Pérez Méndez" required>
+            </div>
+
+            <!-- Correo electrónico -->
+            <div class="campo-formulario">
+              <label class="campo-etiqueta" for="campo-correo-cv">Correo electrónico</label>
+              <input type="email" class="campo-entrada" id="campo-correo-cv" name="correo" placeholder="Ej: correo@ejemplo.com" required>
+            </div>
+
+            <!-- Teléfono -->
+            <div class="campo-formulario">
+              <label class="campo-etiqueta" for="campo-telefono-cv">Teléfono de contacto</label>
+              <input type="tel" class="campo-entrada" id="campo-telefono-cv" name="telefono" placeholder="Ej: (555) 123-4567" required>
+            </div>
+
+            <!-- Especialidad -->
+            <div class="campo-formulario">
+              <label class="campo-etiqueta" for="campo-especialidad-cv">Especialidad médica</label>
+              <select class="campo-seleccion" id="campo-especialidad-cv" name="especialidad" required>
+                <option value="" disabled selected>Selecciona tu especialidad</option>
+                <option value="cardiologia">🫀 Cardiología</option>
+                <option value="dermatologia">🧴 Dermatología</option>
+                <option value="pediatria">👶 Pediatría</option>
+                <option value="traumatologia">🦴 Traumatología</option>
+                <option value="ginecologia">🌸 Ginecología</option>
+                <option value="oftalmologia">👁️ Oftalmología</option>
+                <option value="neurologia">🧠 Neurología</option>
+                <option value="odontologia">🦷 Odontología</option>
+                <option value="medicina-general">🏥 Medicina General</option>
+                <option value="otra">📋 Otra especialidad</option>
+              </select>
+            </div>
+
+            <!-- Años de experiencia -->
+            <div class="campo-formulario">
+              <label class="campo-etiqueta" for="campo-experiencia-cv">Años de experiencia</label>
+              <select class="campo-seleccion" id="campo-experiencia-cv" name="experiencia" required>
+                <option value="" disabled selected>Selecciona un rango</option>
+                <option value="0-2">👶 0 — 2 años</option>
+                <option value="3-5">📘 3 — 5 años</option>
+                <option value="6-10">⭐ 6 — 10 años</option>
+                <option value="11-15">🏅 11 — 15 años</option>
+                <option value="16+">🏆 Más de 15 años</option>
+              </select>
+            </div>
+
+            <!-- Disponibilidad -->
+            <div class="campo-formulario">
+              <label class="campo-etiqueta" for="campo-disponibilidad-cv">Disponibilidad</label>
+              <select class="campo-seleccion" id="campo-disponibilidad-cv" name="disponibilidad" required>
+                <option value="" disabled selected>Selecciona tu disponibilidad</option>
+                <option value="tiempo-completo">🕐 Tiempo completo</option>
+                <option value="medio-tiempo">🕑 Medio tiempo</option>
+                <option value="fines-de-semana">📅 Fines de semana</option>
+                <option value="guardias">🌙 Guardias nocturnas</option>
+                <option value="flexible">🔄 Horario flexible</option>
+              </select>
+            </div>
+
+            <!-- Archivo CV -->
+            <div class="campo-formulario campo-completo">
+              <label class="campo-etiqueta" for="campo-archivo-cv">Adjuntar CV (PDF o Word)</label>
+              <input type="file" class="campo-entrada" id="campo-archivo-cv" name="archivo_cv" accept=".pdf,.doc,.docx" required>
+            </div>
+
+            <!-- Mensaje / carta de presentación -->
+            <div class="campo-formulario campo-completo">
+              <label class="campo-etiqueta" for="campo-mensaje-cv">Carta de presentación (opcional)</label>
+              <textarea class="campo-texto" id="campo-mensaje-cv" name="mensaje" placeholder="Cuéntanos sobre tu experiencia profesional, motivación para unirte a ClinicaTodoSalud y cualquier información relevante..."></textarea>
+            </div>
+          </div>
+
+          <!-- Botón enviar -->
+          <button type="submit" class="boton-cta boton-cta-acento boton-enviar">
+            📧 Enviar mi CV
+          </button>
+        </form>
+
+        <!-- Información lateral -->
+        <aside class="agendar-info" id="info-empleo">
+          <!-- Tarjeta beneficios -->
+          <div class="info-tarjeta">
+            <h3 class="info-tarjeta-titulo">🌟 ¿Por qué trabajar con nosotros?</h3>
+
+            <div class="info-item">
+              <div class="info-item-icono">💰</div>
+              <div>
+                <div class="info-item-titulo">Compensación competitiva</div>
+                <div class="info-item-texto">Salarios acorde al mercado con bonos por desempeño y productividad.</div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-item-icono">📚</div>
+              <div>
+                <div class="info-item-titulo">Formación continua</div>
+                <div class="info-item-texto">Acceso a congresos, cursos y capacitaciones pagadas por la clínica.</div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-item-icono">🏥</div>
+              <div>
+                <div class="info-item-titulo">Instalaciones modernas</div>
+                <div class="info-item-texto">Equipamiento de última generación para que ejerzas al máximo nivel.</div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-item-icono">🤝</div>
+              <div>
+                <div class="info-item-titulo">Ambiente colaborativo</div>
+                <div class="info-item-texto">Un equipo multidisciplinario donde tu opinión y bienestar importan.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tarjeta proceso de selección -->
+          <div class="info-tarjeta">
+            <h3 class="info-tarjeta-titulo">📋 Proceso de Selección</h3>
+
+            <div class="info-item">
+              <div class="info-item-icono">1️⃣</div>
+              <div>
+                <div class="info-item-titulo">Envío de CV</div>
+                <div class="info-item-texto">Completa este formulario con tus datos y adjunta tu currículum.</div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-item-icono">2️⃣</div>
+              <div>
+                <div class="info-item-titulo">Revisión de perfil</div>
+                <div class="info-item-texto">Nuestro equipo evaluará tu perfil en un plazo de 5 días hábiles.</div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-item-icono">3️⃣</div>
+              <div>
+                <div class="info-item-titulo">Entrevista</div>
+                <div class="info-item-texto">Te contactaremos para agendar una entrevista presencial o virtual.</div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-item-icono">4️⃣</div>
+              <div>
+                <div class="info-item-titulo">Incorporación</div>
+                <div class="info-item-texto">¡Bienvenido al equipo! Iniciarás tu proceso de inducción con nosotros.</div>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PIE DE PÁGINA
+       ========================================== -->
+  <footer class="pie-pagina" id="pie-pagina">
+    <div class="contenedor">
+      <div class="pie-grid">
+        <div class="pie-marca">
+          <a href="index.html" class="logo">
+            <div class="logo-icono">🩺</div>
+            Clinica<span>TodoSalud</span>
+          </a>
+          <p class="pie-descripcion">Tu salud es nuestra pasión. Brindamos atención médica integral con calidad, calidez y tecnología de vanguardia.</p>
+        </div>
+
+        <div class="pie-columna">
+          <h4 class="pie-columna-titulo">Enlaces</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="especialidades.html">Especialidades</a></li>
+            <li><a href="busca-tu-medico.html">Busca tu Médico</a></li>
+            <li><a href="agendar-cita.html">Agendar Cita</a></li>
+          </ul>
+        </div>
+
+        <div class="pie-columna">
+          <h4 class="pie-columna-titulo">Especialidades</h4>
+          <ul>
+            <li><a href="especialidades.html">Cardiología</a></li>
+            <li><a href="especialidades.html">Pediatría</a></li>
+            <li><a href="especialidades.html">Dermatología</a></li>
+            <li><a href="especialidades.html">Traumatología</a></li>
+          </ul>
+        </div>
+
+        <div class="pie-columna">
+          <h4 class="pie-columna-titulo">Contacto</h4>
+          <ul>
+            <li><a href="#">📍 Av. Principal #123</a></li>
+            <li><a href="#">📞 (555) 123-4567</a></li>
+            <li><a href="#">✉️ contacto@clinicatodosalud.com</a></li>
+            <li><a href="#">🕐 Lun-Sáb: 7:00 - 20:00</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pie-inferior">
+        <p class="pie-copyright">© 2026 ClinicaTodoSalud. Todos los derechos reservados.</p>
+        <div class="pie-redes">
+          <a href="#" class="pie-red-social" aria-label="Facebook">📘</a>
+          <a href="#" class="pie-red-social" aria-label="Instagram">📷</a>
+          <a href="#" class="pie-red-social" aria-label="Twitter">🐦</a>
+          <a href="#" class="pie-red-social" aria-label="YouTube">🎬</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

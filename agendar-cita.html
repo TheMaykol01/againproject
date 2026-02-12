@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Agenda tu cita médica en ClinicaTodoSalud. Elige tu especialidad, médico y horario preferido de manera sencilla.">
+  <title>Agendar Cita — ClinicaTodoSalud</title>
+  <!-- Fuentes de Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Hoja de estilos -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       BARRA DE NAVEGACIÓN
+       ========================================== -->
+  <nav class="barra-navegacion" id="navegacion-principal">
+    <div class="contenedor">
+      <a href="index.html" class="logo">
+        <div class="logo-icono">🩺</div>
+        Clinica<span>TodoSalud</span>
+      </a>
+
+      <input type="checkbox" class="toggle-menu" id="toggle-menu">
+      <label for="toggle-menu" class="label-toggle-menu" aria-label="Abrir menú">
+        <span class="barra"></span>
+        <span class="barra"></span>
+        <span class="barra"></span>
+      </label>
+
+      <ul class="menu-navegacion" id="menu-principal">
+        <li class="elemento-menu">
+          <a href="index.html">Inicio</a>
+        </li>
+        <li class="elemento-menu">
+          <a href="especialidades.html">Especialidades</a>
+        </li>
+        <li class="elemento-menu">
+          <a href="busca-tu-medico.html">Busca tu Médico</a>
+        </li>
+        <li class="elemento-menu">
+          <a href="agendar-cita.html" class="boton-cta boton-cta-primario activo">
+            📅 Agendar Cita
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       CABECERA DE PÁGINA
+       ========================================== -->
+  <header class="cabecera-pagina" id="cabecera-agendar">
+    <div class="contenedor">
+      <div class="etiqueta">Reserva tu Consulta</div>
+      <h1 class="cabecera-titulo">Agenda tu <span class="texto-gradiente">cita médica</span></h1>
+      <p class="cabecera-descripcion">Completa el formulario y uno de nuestros asistentes confirmará tu cita en menos de 24 horas.</p>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       SECCIÓN FORMULARIO DE CITA
+       ========================================== -->
+  <section class="seccion-agendar" id="formulario-agendar">
+    <div class="contenedor">
+      <div class="agendar-contenedor">
+
+        <!-- Formulario -->
+        <form class="formulario-cita" id="formulario-cita" action="#" method="post">
+          <h2 class="formulario-titulo">📋 Datos de la cita</h2>
+
+          <div class="grupo-campos">
+            <!-- Nombre completo -->
+            <div class="campo-formulario">
+              <label class="campo-etiqueta" for="campo-nombre">Nombre completo</label>
+              <input type="text" class="campo-entrada" id="campo-nombre" name="nombre" placeholder="Ej: María García López" required>
+            </div>
+
+            <!-- Teléfono -->
+            <div class="campo-formulario">
+              <label class="campo-etiqueta" for="campo-telefono">Teléfono</label>
+              <input type="tel" class="campo-entrada" id="campo-telefono" name="telefono" placeholder="Ej: (555) 123-4567" required>
+            </div>
+
+            <!-- Correo electrónico -->
+            <div class="campo-formulario">
+              <label class="campo-etiqueta" for="campo-correo">Correo electrónico</label>
+              <input type="email" class="campo-entrada" id="campo-correo" name="correo" placeholder="Ej: correo@ejemplo.com" required>
+            </div>
+
+            <!-- Especialidad -->
+            <div class="campo-formulario">
+              <label class="campo-etiqueta" for="campo-especialidad">Especialidad</label>
+              <select class="campo-seleccion" id="campo-especialidad" name="especialidad" required>
+                <option value="" disabled selected>Selecciona una especialidad</option>
+                <option value="cardiologia">🫀 Cardiología</option>
+                <option value="dermatologia">🧴 Dermatología</option>
+                <option value="pediatria">👶 Pediatría</option>
+                <option value="traumatologia">🦴 Traumatología</option>
+                <option value="ginecologia">🌸 Ginecología</option>
+                <option value="oftalmologia">👁️ Oftalmología</option>
+                <option value="neurologia">🧠 Neurología</option>
+                <option value="odontologia">🦷 Odontología</option>
+                <option value="medicina-general">🏥 Medicina General</option>
+              </select>
+            </div>
+
+            <!-- Fecha preferida -->
+            <div class="campo-formulario">
+              <label class="campo-etiqueta" for="campo-fecha">Fecha preferida</label>
+              <input type="date" class="campo-entrada" id="campo-fecha" name="fecha" required>
+            </div>
+
+            <!-- Horario preferido -->
+            <div class="campo-formulario">
+              <label class="campo-etiqueta" for="campo-horario">Horario preferido</label>
+              <select class="campo-seleccion" id="campo-horario" name="horario" required>
+                <option value="" disabled selected>Selecciona un horario</option>
+                <option value="manana-temprano">🌅 7:00 — 9:00</option>
+                <option value="manana">☀️ 9:00 — 12:00</option>
+                <option value="tarde">🌤️ 12:00 — 15:00</option>
+                <option value="tarde-noche">🌇 15:00 — 18:00</option>
+                <option value="noche">🌙 18:00 — 20:00</option>
+              </select>
+            </div>
+
+            <!-- Mensaje adicional -->
+            <div class="campo-formulario campo-completo">
+              <label class="campo-etiqueta" for="campo-mensaje">Mensaje adicional (opcional)</label>
+              <textarea class="campo-texto" id="campo-mensaje" name="mensaje" placeholder="Describe brevemente el motivo de tu consulta o cualquier información relevante..."></textarea>
+            </div>
+          </div>
+
+          <!-- Botón enviar -->
+          <button type="submit" class="boton-cta boton-cta-acento boton-enviar">
+            ✅ Solicitar Cita
+          </button>
+        </form>
+
+        <!-- Información lateral -->
+        <aside class="agendar-info" id="info-contacto">
+          <!-- Tarjeta de información de contacto -->
+          <div class="info-tarjeta">
+            <h3 class="info-tarjeta-titulo">📍 Información de Contacto</h3>
+
+            <div class="info-item">
+              <div class="info-item-icono">📍</div>
+              <div>
+                <div class="info-item-titulo">Dirección</div>
+                <div class="info-item-texto">Av. Principal #123, Centro Médico, Piso 3</div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-item-icono">📞</div>
+              <div>
+                <div class="info-item-titulo">Teléfono</div>
+                <div class="info-item-texto">(555) 123-4567</div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-item-icono">✉️</div>
+              <div>
+                <div class="info-item-titulo">Correo Electrónico</div>
+                <div class="info-item-texto">contacto@clinicatodosalud.com</div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-item-icono">🕐</div>
+              <div>
+                <div class="info-item-titulo">Horario de Atención</div>
+                <div class="info-item-texto">Lunes a Sábado: 7:00 — 20:00</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tarjeta de ayuda rápida -->
+          <div class="info-tarjeta">
+            <h3 class="info-tarjeta-titulo">💡 ¿Sabías que?</h3>
+
+            <div class="info-item">
+              <div class="info-item-icono">⚡</div>
+              <div>
+                <div class="info-item-titulo">Confirmación rápida</div>
+                <div class="info-item-texto">Tu cita será confirmada en menos de 24 horas por nuestro equipo.</div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-item-icono">🔄</div>
+              <div>
+                <div class="info-item-titulo">Reprogramación flexible</div>
+                <div class="info-item-texto">Puedes reprogramar tu cita hasta 4 horas antes sin costo adicional.</div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-item-icono">🛡️</div>
+              <div>
+                <div class="info-item-titulo">Datos seguros</div>
+                <div class="info-item-texto">Tu información personal está protegida bajo estrictas políticas de privacidad.</div>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PIE DE PÁGINA
+       ========================================== -->
+  <footer class="pie-pagina" id="pie-pagina">
+    <div class="contenedor">
+      <div class="pie-grid">
+        <div class="pie-marca">
+          <a href="index.html" class="logo">
+            <div class="logo-icono">🩺</div>
+            Clinica<span>TodoSalud</span>
+          </a>
+          <p class="pie-descripcion">Tu salud es nuestra pasión. Brindamos atención médica integral con calidad, calidez y tecnología de vanguardia.</p>
+        </div>
+
+        <div class="pie-columna">
+          <h4 class="pie-columna-titulo">Enlaces</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="especialidades.html">Especialidades</a></li>
+            <li><a href="busca-tu-medico.html">Busca tu Médico</a></li>
+            <li><a href="agendar-cita.html">Agendar Cita</a></li>
+          </ul>
+        </div>
+
+        <div class="pie-columna">
+          <h4 class="pie-columna-titulo">Especialidades</h4>
+          <ul>
+            <li><a href="especialidades.html">Cardiología</a></li>
+            <li><a href="especialidades.html">Pediatría</a></li>
+            <li><a href="especialidades.html">Dermatología</a></li>
+            <li><a href="especialidades.html">Traumatología</a></li>
+          </ul>
+        </div>
+
+        <div class="pie-columna">
+          <h4 class="pie-columna-titulo">Contacto</h4>
+          <ul>
+            <li><a href="#">📍 Av. Principal #123</a></li>
+            <li><a href="#">📞 (555) 123-4567</a></li>
+            <li><a href="#">✉️ contacto@clinicatodosalud.com</a></li>
+            <li><a href="#">🕐 Lun-Sáb: 7:00 - 20:00</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pie-inferior">
+        <p class="pie-copyright">© 2026 ClinicaTodoSalud. Todos los derechos reservados.</p>
+        <div class="pie-redes">
+          <a href="#" class="pie-red-social" aria-label="Facebook">📘</a>
+          <a href="#" class="pie-red-social" aria-label="Instagram">📷</a>
+          <a href="#" class="pie-red-social" aria-label="Twitter">🐦</a>
+          <a href="#" class="pie-red-social" aria-label="YouTube">🎬</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
