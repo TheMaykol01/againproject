@@ -144,8 +144,9 @@ h6 {
 
 /* --- Etiqueta decorativa --- */
 .etiqueta {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   padding: 0.4rem 1rem;
   border-radius: var(--radio-completo);
@@ -155,7 +156,8 @@ h6 {
   border: 1px solid var(--borde-claro);
   background: var(--color-primario-sutil);
   color: var(--color-primario);
-  margin-bottom: var(--espaciado-md);
+  width: fit-content;
+  margin: 0 auto var(--espaciado-md);
 }
 
 .etiqueta::before {
@@ -369,7 +371,7 @@ h6 {
 
 .boton-cta-primario {
   background: linear-gradient(135deg, var(--color-primario-oscuro), var(--color-primario));
-  color: #ffffff;
+  color: #ffffff !important;
   box-shadow: var(--sombra-primaria);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   letter-spacing: 0.01em;
@@ -378,6 +380,7 @@ h6 {
 .boton-cta-primario:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 30px rgba(37, 99, 235, 0.4);
+  color: var(--texto-oscuro) !important;
 }
 
 .boton-cta-secundario {
@@ -495,12 +498,13 @@ h6 {
   line-height: 1.08;
   margin-bottom: var(--espaciado-md);
   letter-spacing: -0.03em;
+  text-align: center;
 }
 
 .hero-subtitulo {
   font-size: 1.2rem;
   color: var(--texto-cuerpo);
-  max-width: 700px;
+  max-width: 1000px;
   margin-bottom: var(--espaciado-lg);
   line-height: 1.8;
   animation: deslizar-arriba 0.8s var(--transicion-lenta) 0.15s both;
@@ -508,6 +512,7 @@ h6 {
 
 .hero-acciones {
   display: flex;
+  justify-content: center;
   gap: var(--espaciado-sm);
   flex-wrap: wrap;
   animation: deslizar-arriba 0.8s var(--transicion-lenta) 0.3s both;
@@ -516,16 +521,22 @@ h6 {
 /* Estadísticas del hero */
 .hero-estadisticas {
   display: flex;
+  justify-content: center;
   gap: var(--espaciado-xl);
   margin-top: var(--espaciado-2xl);
   animation: deslizar-arriba 0.8s var(--transicion-lenta) 0.45s both;
 }
 
 .estadistica {
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .estadistica-numero {
+  display: flex;
+  justify-content: center;
   font-family: var(--fuente-display);
   font-size: 2.5rem;
   font-weight: 800;
@@ -534,6 +545,8 @@ h6 {
 }
 
 .estadistica-texto {
+  display: flex;
+  justify-content: center;
   font-size: 0.9rem;
   color: var(--texto-gris);
   margin-top: 0.25rem;
@@ -1243,6 +1256,11 @@ h6 {
   background: white;
   color: var(--color-primario-oscuro);
   font-weight: 700;
+}
+
+.menu-navegacion .boton-cta-blanco {
+  color: #ffffff !important;
+  background: var(--color-primario);
 }
 
 .boton-cta-blanco:hover {
