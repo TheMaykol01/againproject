@@ -1,10 +1,4 @@
-/* ============================================
-   ClinicaTodoSalud — Hoja de Estilos Principal
-   ============================================ */
-
-/* --- Variables globales --- */
 :root {
-  /* Colores principales — Azul */
   --color-primario: #2563eb;
   --color-primario-oscuro: #1d4ed8;
   --color-primario-claro: #3b82f6;
@@ -13,7 +7,6 @@
   --color-acento-claro: #3b82f6;
   --color-acento-sutil: rgba(37, 99, 235, 0.06);
 
-  /* Fondos */
   --fondo-oscuro: #ffffff;
   --fondo-oscuro-2: #f8fafc;
   --fondo-claro: #eff6ff;
@@ -21,27 +14,22 @@
   --fondo-vidrio: rgba(37, 99, 235, 0.04);
   --fondo-blanco: #ffffff;
 
-  /* Texto */
   --texto-claro: #1e293b;
   --texto-gris: #64748b;
   --texto-oscuro: #0f172a;
   --texto-cuerpo: #475569;
 
-  /* Bordes */
   --borde-sutil: rgba(0, 0, 0, 0.08);
   --borde-claro: rgba(37, 99, 235, 0.2);
 
-  /* Sombras */
   --sombra-suave: 0 4px 24px rgba(0, 0, 0, 0.06);
   --sombra-elevada: 0 8px 40px rgba(0, 0, 0, 0.1);
   --sombra-primaria: 0 4px 20px rgba(37, 99, 235, 0.15);
   --sombra-acento: 0 4px 20px rgba(37, 99, 235, 0.12);
 
-  /* Tipografía */
   --fuente-display: 'Outfit', sans-serif;
   --fuente-cuerpo: 'DM Sans', sans-serif;
 
-  /* Espaciado */
   --espaciado-xs: 0.5rem;
   --espaciado-sm: 1rem;
   --espaciado-md: 1.5rem;
@@ -49,23 +37,19 @@
   --espaciado-xl: 4rem;
   --espaciado-2xl: 6rem;
 
-  /* Bordes redondeados */
   --radio-sm: 8px;
   --radio-md: 12px;
   --radio-lg: 20px;
   --radio-xl: 28px;
   --radio-completo: 50px;
 
-  /* Transiciones */
   --transicion-rapida: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   --transicion-media: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   --transicion-lenta: 0.5s cubic-bezier(0.22, 1, 0.36, 1);
 
-  /* Ancho máximo */
   --ancho-contenedor: 1200px;
 }
 
-/* --- Reset y base --- */
 *,
 *::before,
 *::after {
@@ -115,7 +99,6 @@ h6 {
   line-height: 1.2;
 }
 
-/* --- Utilidades --- */
 .contenedor {
   max-width: var(--ancho-contenedor);
   margin: 0 auto;
@@ -142,7 +125,6 @@ h6 {
   margin: 0 auto var(--espaciado-xl);
 }
 
-/* --- Etiqueta decorativa --- */
 .etiqueta {
   display: flex;
   align-items: center;
@@ -169,9 +151,6 @@ h6 {
   animation: pulso 2s ease-in-out infinite;
 }
 
-/* ============================================
-   BARRA DE NAVEGACIÓN
-   ============================================ */
 .barra-navegacion {
   position: fixed;
   top: 0;
@@ -192,7 +171,6 @@ h6 {
   justify-content: space-between;
 }
 
-/* --- Logo --- */
 .logo {
   display: flex;
   align-items: center;
@@ -236,7 +214,6 @@ h6 {
   color: var(--color-primario);
 }
 
-/* --- Menú de navegación --- */
 .menu-navegacion {
   display: flex;
   align-items: center;
@@ -287,7 +264,6 @@ h6 {
   background: var(--fondo-vidrio);
 }
 
-/* --- Flecha del submenú --- */
 .flecha-submenu {
   font-size: 0.6rem;
   transition: transform var(--transicion-rapida);
@@ -299,7 +275,6 @@ h6 {
   transform: rotate(180deg);
 }
 
-/* --- Submenú desplegable --- */
 .submenu {
   position: absolute;
   top: 100%;
@@ -357,7 +332,6 @@ h6 {
   text-align: center;
 }
 
-/* --- Botón de acción (CTA) --- */
 .boton-cta {
   display: inline-flex;
   align-items: center;
@@ -411,7 +385,6 @@ h6 {
   box-shadow: 0 6px 30px rgba(249, 115, 22, 0.4);
 }
 
-/* --- Toggle menú móvil (checkbox hack) --- */
 .toggle-menu {
   display: none;
 }
@@ -433,10 +406,7 @@ h6 {
   transition: all var(--transicion-media);
 }
 
-/* ============================================
-   HERO SECTION — INICIO
-   ============================================ */
-.seccion-hero {
+.seccion-principal {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -445,15 +415,14 @@ h6 {
   overflow: hidden;
 }
 
-/* Fondo gradiente animado */
-.hero-fondo {
+.principal-fondo {
   position: absolute;
   inset: 0;
   z-index: 0;
   overflow: hidden;
 }
 
-.hero-fondo::before {
+.principal-fondo::before {
   content: '';
   position: absolute;
   top: -40%;
@@ -465,7 +434,7 @@ h6 {
   animation: flotar 8s ease-in-out infinite;
 }
 
-.hero-fondo::after {
+.principal-fondo::after {
   content: '';
   position: absolute;
   bottom: -30%;
@@ -477,8 +446,7 @@ h6 {
   animation: flotar 10s ease-in-out infinite reverse;
 }
 
-/* Patrón decorativo de puntos */
-.hero-patron {
+.principal-patron {
   position: absolute;
   top: 15%;
   right: 5%;
@@ -490,14 +458,14 @@ h6 {
   animation: aparecer-suave 1.5s ease-out 0.8s both;
 }
 
-.hero-contenido {
+.principal-contenido {
   position: relative;
   z-index: 1;
   max-width: 900px;
   animation: deslizar-arriba 0.8s var(--transicion-lenta) both;
 }
 
-.hero-titulo {
+.principal-titulo {
   font-size: clamp(2.8rem, 6vw, 4.5rem);
   font-weight: 800;
   line-height: 1.08;
@@ -506,7 +474,7 @@ h6 {
   text-align: center;
 }
 
-.hero-subtitulo {
+.principal-subtitulo {
   font-size: 1.2rem;
   color: var(--texto-cuerpo);
   max-width: 1000px;
@@ -515,7 +483,7 @@ h6 {
   animation: deslizar-arriba 0.8s var(--transicion-lenta) 0.15s both;
 }
 
-.hero-acciones {
+.principal-acciones {
   display: flex;
   justify-content: center;
   gap: var(--espaciado-sm);
@@ -523,8 +491,7 @@ h6 {
   animation: deslizar-arriba 0.8s var(--transicion-lenta) 0.3s both;
 }
 
-/* Estadísticas del hero */
-.hero-estadisticas {
+.principal-estadisticas {
   display: flex;
   justify-content: center;
   gap: var(--espaciado-xl);
@@ -557,9 +524,6 @@ h6 {
   margin-top: 0.25rem;
 }
 
-/* ============================================
-   SECCIÓN DE SERVICIOS
-   ============================================ */
 .seccion-servicios {
   padding: var(--espaciado-2xl) 0;
   position: relative;
@@ -667,9 +631,6 @@ h6 {
   line-height: 1.7;
 }
 
-/* ============================================
-   SECCIÓN ¿POR QUÉ ELEGIRNOS?
-   ============================================ */
 .seccion-ventajas {
   padding: var(--espaciado-2xl) 0;
   background: var(--fondo-oscuro-2);
@@ -741,9 +702,6 @@ h6 {
   color: var(--texto-gris);
 }
 
-/* ============================================
-   SECCIÓN ESPECIALIDADES
-   ============================================ */
 .seccion-especialidades {
   padding: var(--espaciado-2xl) 0;
   padding-top: calc(var(--espaciado-2xl) + 80px);
@@ -861,15 +819,11 @@ h6 {
   gap: 0.6rem;
 }
 
-/* ============================================
-   SECCIÓN BUSCA TU MÉDICO
-   ============================================ */
 .seccion-medicos {
   padding: var(--espaciado-2xl) 0;
   padding-top: calc(var(--espaciado-2xl) + 80px);
 }
 
-/* Barra de búsqueda decorativa */
 .barra-busqueda {
   max-width: 560px;
   margin: 0 auto var(--espaciado-xl);
@@ -910,7 +864,6 @@ h6 {
   pointer-events: none;
 }
 
-/* Grid de médicos */
 .grid-medicos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1036,9 +989,6 @@ h6 {
   color: white;
 }
 
-/* ============================================
-   SECCIÓN AGENDAR CITA
-   ============================================ */
 .seccion-agendar {
   padding: var(--espaciado-2xl) 0;
   padding-top: calc(var(--espaciado-2xl) + 80px);
@@ -1051,7 +1001,6 @@ h6 {
   align-items: start;
 }
 
-/* Formulario */
 .formulario-cita {
   background: var(--fondo-blanco);
   border: 1px solid var(--borde-sutil);
@@ -1129,11 +1078,12 @@ h6 {
 }
 
 .boton-enviar {
-  width: 100%;
-  margin-top: var(--espaciado-sm);
+  width: auto;
+  min-width: 200px;
+  display: block;
+  margin: var(--espaciado-sm) auto 0;
 }
 
-/* Info lateral */
 .agendar-info {
   animation: deslizar-arriba 0.6s ease-out 0.2s both;
 }
@@ -1192,9 +1142,6 @@ h6 {
   color: var(--texto-gris);
 }
 
-/* ============================================
-   BANNER CTA (llamada a la acción)
-   ============================================ */
 .seccion-cta {
   padding: var(--espaciado-2xl) 0;
 }
@@ -1284,9 +1231,6 @@ h6 {
   border-color: white;
 }
 
-/* ============================================
-   PIE DE PÁGINA
-   ============================================ */
 .pie-pagina {
   background: #f1f5f9;
   border-top: 1px solid var(--borde-sutil);
@@ -1383,9 +1327,19 @@ h6 {
   transform: translateY(-2px);
 }
 
-/* ============================================
-   SECCIÓN TRABAJOS DESTACADOS
-   ============================================ */
+.boton-sistema {
+  display: inline-block;
+  background-color: var(--color-primario);
+  color: white !important;
+  border: 1px solid var(--color-primario);
+  padding: 0.4rem 1rem;
+  border-radius: var(--radio-sm);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all var(--transicion-rapida);
+  margin-top: 0.25rem;
+}
+
 .seccion-trabajos {
   padding: var(--espaciado-2xl) 0;
   background: var(--fondo-oscuro-2);
@@ -1504,11 +1458,6 @@ h6 {
   }
 }
 
-/* ============================================
-   ANIMACIONES @keyframes
-   ============================================ */
-
-/* Deslizar desde abajo */
 @keyframes deslizar-arriba {
   from {
     opacity: 0;
@@ -1521,7 +1470,6 @@ h6 {
   }
 }
 
-/* Aparecer suavemente */
 @keyframes aparecer-suave {
   from {
     opacity: 0;
@@ -1534,7 +1482,6 @@ h6 {
   }
 }
 
-/* Efecto flotar */
 @keyframes flotar {
 
   0%,
@@ -1547,7 +1494,6 @@ h6 {
   }
 }
 
-/* Pulso en la etiqueta */
 @keyframes pulso {
 
   0%,
@@ -1562,7 +1508,6 @@ h6 {
   }
 }
 
-/* Brillo del logo */
 @keyframes brillo-logo {
   0% {
     transform: translateX(-100%) rotate(45deg);
@@ -1573,7 +1518,6 @@ h6 {
   }
 }
 
-/* Gradiente animado para fondo de hero */
 @keyframes gradiente-movimiento {
   0% {
     background-position: 0% 50%;
@@ -1588,11 +1532,6 @@ h6 {
   }
 }
 
-/* ============================================
-   DISEÑO RESPONSIVE
-   ============================================ */
-
-/* Tablet */
 @media (max-width: 992px) {
   .pie-grid {
     grid-template-columns: 1fr 1fr;
@@ -1603,15 +1542,13 @@ h6 {
     grid-template-columns: 1fr;
   }
 
-  .hero-estadisticas {
+  .principal-estadisticas {
     gap: var(--espaciado-lg);
   }
 }
 
-/* Móvil */
 @media (max-width: 768px) {
 
-  /* Mostrar botón de menú hamburguesa */
   .label-toggle-menu {
     display: flex;
   }
@@ -1638,7 +1575,6 @@ h6 {
     right: 0;
   }
 
-  /* Animación de las barras del hamburguesa */
   .toggle-menu:checked~.label-toggle-menu .barra:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
@@ -1651,7 +1587,6 @@ h6 {
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  /* Submenús en móvil */
   .submenu {
     position: static;
     transform: none;
@@ -1683,17 +1618,15 @@ h6 {
     font-size: 1rem;
   }
 
-  /* Ocultar CTA en nav en móvil */
   .nav-cta-movil {
     margin-top: var(--espaciado-sm);
   }
 
-  /* Secciones */
-  .hero-titulo {
+  .principal-titulo {
     font-size: clamp(2rem, 7vw, 3rem);
   }
 
-  .hero-estadisticas {
+  .principal-estadisticas {
     flex-direction: column;
     gap: var(--espaciado-sm);
   }
@@ -1723,11 +1656,11 @@ h6 {
 }
 
 @media (max-width: 480px) {
-  .hero-acciones {
+  .principal-acciones {
     flex-direction: column;
   }
 
-  .hero-acciones .boton-cta {
+  .principal-acciones .boton-cta {
     width: 100%;
     justify-content: center;
   }
@@ -1737,9 +1670,6 @@ h6 {
   }
 }
 
-/* ============================================
-   PÁGINA DE CONTENIDO GENÉRICA (título superior)
-   ============================================ */
 .cabecera-pagina {
   padding-top: calc(80px + var(--espaciado-xl));
   padding-bottom: var(--espaciado-lg);
@@ -1774,9 +1704,6 @@ h6 {
   animation: deslizar-arriba 0.6s ease-out 0.15s both;
 }
 
-/* ============================================
-   SECCIÓN DE SEGUROS
-   ============================================ */
 .seccion-seguros {
   padding: var(--espaciado-xl) 0;
   background: var(--fondo-claro);
@@ -1828,7 +1755,6 @@ h6 {
   flex-shrink: 0;
 }
 
-/* Ocultar el texto placeholder cuando hay una imagen */
 .seguro-imagen-contenedor img~.seguro-imagen-placeholder {
   display: none;
 }
@@ -1896,7 +1822,6 @@ h6 {
   font-weight: 700;
 }
 
-/* --- Alertas de validación --- */
 .warning {
   color: #dc2626;
   font-size: 0.9rem;

@@ -1,4 +1,3 @@
-// Buscador de médicos
 document.addEventListener('keyup', e => {
   if (e.target.matches('#campo-buscar-medico')) {
     const textoBusqueda = e.target.value.toLowerCase();
@@ -17,7 +16,6 @@ document.addEventListener('keyup', e => {
   }
 });
 
-// Validación del formulario de Citas
 const formularioCita = document.getElementById('formulario-cita');
 if (formularioCita) {
   formularioCita.addEventListener('submit', function (e) {
@@ -55,7 +53,6 @@ if (formularioCita) {
       warnings += `Selecciona una fecha <br>`;
       entrar = true;
     } else {
-      // Validar fecha futura
       const fechaSeleccionada = new Date(fecha.value + 'T00:00:00');
       const fechaActual = new Date();
       fechaActual.setHours(0, 0, 0, 0);
@@ -74,27 +71,26 @@ if (formularioCita) {
       parrafo.innerHTML = warnings;
     } else {
       parrafo.innerHTML = "Enviado";
-      // Aquí se enviaría el formulario realmente
     }
   });
 }
 
-// Validación del formulario de CV
 const formularioCV = document.getElementById('formulario-cv');
 if (formularioCV) {
   formularioCV.addEventListener('submit', function (e) {
     let warnings = "";
     let entrar = false;
     const regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    const parrafo = document.getElementById("warning");
+    const parrafo = document.getElementById("warning-cv");
 
     const nombre = document.getElementById("campo-nombre-cv");
     const email = document.getElementById("campo-correo-cv");
     const telefono = document.getElementById("campo-telefono-cv");
-    const especialidad = document.getElementById("campo-especialidad-cv");
-    const experiencia = document.getElementById("campo-experiencia-cv");
-    const disponibilidad = document.getElementById("campo-disponibilidad-cv");
-    const archivo = document.getElementById("campo-archivo-cv");
+    const perfil = document.getElementById("campo-perfil");
+    const archivo = document.getElementById("campo-archivo");
+
+    // El campo mensaje es opcional, no requiere validación obligatoria
+    // const mensaje = document.getElementById("campo-mensaje-cv");
 
     parrafo.innerHTML = "";
 
@@ -110,16 +106,8 @@ if (formularioCV) {
       warnings += `El teléfono no es válido <br>`;
       entrar = true;
     }
-    if (especialidad.value === "") {
-      warnings += `Selecciona tu especialidad <br>`;
-      entrar = true;
-    }
-    if (experiencia.value === "") {
-      warnings += `Selecciona tus años de experiencia <br>`;
-      entrar = true;
-    }
-    if (disponibilidad.value === "") {
-      warnings += `Selecciona tu disponibilidad <br>`;
+    if (perfil.value === "") {
+      warnings += `Selecciona tu perfil profesional <br>`;
       entrar = true;
     }
     if (archivo.value === "") {

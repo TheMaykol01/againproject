@@ -7,21 +7,19 @@
   <meta name="description"
     content="Agenda tu cita médica en ClinicaTodoSalud. Elige tu especialidad, médico y horario preferido de manera sencilla.">
   <title>Agendar Cita — ClinicaTodoSalud</title>
-  <!-- Fuentes de Google -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
-  <!-- Hoja de estilos -->
+
   <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
 
-  <!-- ==========================================
-       BARRA DE NAVEGACIÓN
-       ========================================== -->
+
   <nav class="barra-navegacion" id="navegacion-principal">
     <div class="contenedor">
       <a href="index.html" class="logo">
@@ -54,9 +52,7 @@
     </div>
   </nav>
 
-  <!-- ==========================================
-       CABECERA DE PÁGINA
-       ========================================== -->
+
   <header class="cabecera-pagina" id="cabecera-agendar">
     <div class="contenedor">
       <div class="etiqueta">Reserva tu Consulta</div>
@@ -66,40 +62,38 @@
     </div>
   </header>
 
-  <!-- ==========================================
-       SECCIÓN FORMULARIO DE CITA
-       ========================================== -->
+
   <section class="seccion-agendar" id="formulario-agendar">
     <div class="contenedor">
       <div class="agendar-contenedor">
 
-        <!-- Formulario -->
+
         <form class="formulario-cita" id="formulario-cita" action="#" method="post">
           <h2 class="formulario-titulo">📋 Datos de la cita</h2>
 
           <div class="grupo-campos">
-            <!-- Nombre completo -->
+
             <div class="campo-formulario">
               <label class="campo-etiqueta" for="campo-nombre">Nombre completo</label>
               <input type="text" class="campo-entrada" id="campo-nombre" name="nombre"
                 placeholder="Ej: María García López">
             </div>
 
-            <!-- Teléfono -->
+
             <div class="campo-formulario">
               <label class="campo-etiqueta" for="campo-telefono">Teléfono</label>
               <input type="tel" class="campo-entrada" id="campo-telefono" name="telefono"
                 placeholder="Ej: (555) 123-4567">
             </div>
 
-            <!-- Correo electrónico -->
+
             <div class="campo-formulario">
               <label class="campo-etiqueta" for="campo-correo">Correo electrónico</label>
               <input type="email" class="campo-entrada" id="campo-correo" name="correo"
                 placeholder="Ej: correo@ejemplo.com">
             </div>
 
-            <!-- Especialidad -->
+
             <div class="campo-formulario">
               <label class="campo-etiqueta" for="campo-especialidad">Especialidad</label>
               <select class="campo-seleccion" id="campo-especialidad" name="especialidad">
@@ -116,13 +110,13 @@
               </select>
             </div>
 
-            <!-- Fecha preferida -->
+
             <div class="campo-formulario">
               <label class="campo-etiqueta" for="campo-fecha">Fecha preferida</label>
               <input type="date" class="campo-entrada" id="campo-fecha" name="fecha">
             </div>
 
-            <!-- Horario preferido -->
+
             <div class="campo-formulario">
               <label class="campo-etiqueta" for="campo-horario">Horario preferido</label>
               <select class="campo-seleccion" id="campo-horario" name="horario">
@@ -135,7 +129,7 @@
               </select>
             </div>
 
-            <!-- Mensaje adicional -->
+
             <div class="campo-formulario campo-completo">
               <label class="campo-etiqueta" for="campo-mensaje">Mensaje adicional (opcional)</label>
               <textarea class="campo-texto" id="campo-mensaje" name="mensaje"
@@ -144,15 +138,15 @@
           </div>
 
           <p id="warning" class="warning"></p>
-          <!-- Botón enviar -->
+
           <button type="submit" class="boton-cta boton-cta-acento boton-enviar">
             ✅ Solicitar Cita
           </button>
         </form>
 
-        <!-- Información lateral -->
+
         <aside class="agendar-info" id="info-contacto">
-          <!-- Tarjeta de información de contacto -->
+
           <div class="info-tarjeta">
             <h3 class="info-tarjeta-titulo">📍 Información de Contacto</h3>
 
@@ -189,7 +183,7 @@
             </div>
           </div>
 
-          <!-- Tarjeta de ayuda rápida -->
+
           <div class="info-tarjeta">
             <h3 class="info-tarjeta-titulo">💡 ¿Sabías que?</h3>
 
@@ -224,9 +218,7 @@
     </div>
   </section>
 
-  <!-- ==========================================
-       PIE DE PÁGINA
-       ========================================== -->
+
   <footer class="pie-pagina" id="pie-pagina">
     <div class="contenedor">
       <div class="pie-grid">
@@ -245,6 +237,7 @@
             <li><a href="especialidades.html">Especialidades</a></li>
             <li><a href="busca-tu-medico.html">Busca tu Médico</a></li>
             <li><a href="agendar-cita.html">Agendar Cita</a></li>
+            <li><a href="login.html" class="boton-sistema">Sistema</a></li>
           </ul>
         </div>
 
@@ -261,10 +254,10 @@
         <div class="pie-columna">
           <h4 class="pie-columna-titulo">Contacto</h4>
           <ul>
-            <li><a href="#">📍 Av. Principal #123</a></li>
-            <li><a href="#">📞 (555) 123-4567</a></li>
-            <li><a href="#">✉️ contacto@clinicatodosalud.com</a></li>
-            <li><a href="#">🕐 Lun-Sáb: 7:00 - 20:00</a></li>
+            <li>📍 Av. Principal #123</li>
+            <li>📞 (555) 123-4567</li>
+            <li>✉️ contacto@clinicatodosalud.com</li>
+            <li>🕐 Lun-Sáb: 7:00 - 20:00</li>
           </ul>
         </div>
       </div>
