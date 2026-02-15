@@ -70,6 +70,7 @@ if (formularioCita) {
       e.preventDefault();
       parrafo.innerHTML = warnings;
     } else {
+      e.preventDefault();
       parrafo.innerHTML = "Enviado";
     }
   });
@@ -123,3 +124,7 @@ if (formularioCV) {
     }
   });
 }
+
+// --- Lógica del Sistema de Gestión de Citas ---
+
+
